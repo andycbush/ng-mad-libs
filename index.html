@@ -21,7 +21,7 @@
 
 </head>
 
-<body ng-controller="MyCtrl">
+<body ng-controller="MyCtrl as vc">
     <header>
         <nav></nav>
         <div id="logo"><img src="images/ng-mad-libs-logo.png" alt="" width="" height="121">
@@ -56,10 +56,12 @@
     </section>
 
     <section id="version">
-        <p> Refactor version {{ version }}</p>
+        <p> Refactor version {{ vc.version }}</p>
     </section>
 
-    <footer></footer>
+    <footer id="myFooter" ng-controller="MyCtrlTitle as vm">
+        <h2>{{vm.title}}</h2>
+    </footer>
 
     <!-- add all the scripts starting with the external ones and then your own javascript-->
 

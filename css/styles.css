@@ -103,7 +103,7 @@ input {
 
 #version {
     font-size: 1.1em;
-    color: blue;
+    color: powderblue;
     text-align: left;
     margin-top: 2em;
     margin-left: 1em;
@@ -114,6 +114,14 @@ input {
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
+
+#myFooter {
+    font-size: 1.1em;
+    color: powderblue;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 1em;
+}
 
 
 /* -------------------------------------
