@@ -1,130 +1,143 @@
-/*
+    /*
 The CSS code gets to executed from top to bottom and left ro right
 
 Basic rules to write CSS
 - write GENERAL rules first (for all the paragraph tags in the website for example) and only after that write CSS for SPECIFIC tags (for example the paragraph tags inside the footer)
 - write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above
 */
-
-
-/* -------------------------------------
+    /* -------------------------------------
 CSS reset
 (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
-    box-sizing: border-box;
-    /*reset Chrome user agent styles*/
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-before: 0px;
-    -webkit-padding-after: 0px;
-    -webkit-padding-start: 0px;
-    -webkit-padding-end: 0px;
-}
-
-
-/* -------------------------------------
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+        box-sizing: border-box;
+        /*reset Chrome user agent styles*/
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-before: 0px;
+        -webkit-padding-after: 0px;
+        -webkit-padding-start: 0px;
+        -webkit-padding-end: 0px;
+    }
+    /* -------------------------------------
 General styles (General Module, wrapping around the modules bellow)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
-
-
-/* -------------------------------------
+    body {}
+    /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
 */
 
-#happyFace {
-    border: black 3px solid;
-    width: 23%;
-    padding-left: 5em;
-}
+    #happyFace {
+        width: 23%;
+        padding-left: 5em;
+    }
 
-#logo {
-    float: right;
-    width: 77%;
-    text-align: center;
-    border: black 3px solid;
-}
+    #logo {
+        float: right;
+        width: 77%;
+        text-align: center;
+    }
 
-#logoH1 {
-    text-align: center;
-    font-size: 2em;
-}
-
-
-/* -------------------------------------
+    #logoH1 {
+        text-align: center;
+        font-size: 3em;
+        margin-top: .5em;
+    }
+    /* -------------------------------------
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
-#inputH1 {
-    text-align: left;
-    margin-left: 7em;
-    margin-top: 1.5em;
-    font-size: 1.2em;
-}
+    #gender {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
 
-#input {
-    text-align: center;
-}
+    .errorMsg {
+        color: red;
+    }
 
-input {
-    padding: 0.5em;
-    margin: 1em;
-    border: black 1px solid;
-}
+    #leftCol {
+        display: inline-block;
+        float: left;
+    }
 
-#story {
-    font-size: 1.3em;
-    margin-top: .8em;
-    margin-left: .8em;
-    margin-right: .8em;
-}
+    #inputH1 {
+        text-align: left;
+        margin-left: 7em;
+        margin-top: 1.5em;
+        font-size: 1.2em;
+    }
 
-#storyP {
-    margin-top: .5em;
-}
+    #input {
+        text-align: center;
+    }
 
-.storyInput {
-    font-size: 1.35em;
-    color: blue;
-}
+    input {
+        padding: 0.5em;
+        margin: 1em;
+        border: black 1px solid;
+    }
 
-#version {
-    font-size: 1.1em;
-    color: powderblue;
-    text-align: left;
-    margin-top: 2em;
-    margin-left: 1em;
-}
+    button {
+        background-color: lightgray;
+        border-color: darkgray;
+        border-radius: 4px;
+        border-style: none;
+        color: gray;
+        font-size: 1.125rem;
+        padding: .7rem;
+        margin-top: .5em;
+        text-shadow: none;
+        text-align: center;
+    }
 
+    #startOver {
+        text-align: center;
+        margin-left: 10rem;
+    }
 
-/* -------------------------------------
+    #finalMadLib {
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin-top: 1rem;
+    }
+
+    #finalMadLib p {
+        margin: 2rem;
+    }
+
+    .myLib {
+        color: blue;
+    }
+
+    .ng-inactive {
+        display: none;
+    }
+    /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
 
-#myFooter {
-    font-size: 1.1em;
-    color: powderblue;
-    text-align: left;
-    margin-top: 2em;
-    margin-left: 1em;
-}
-
-
-/* -------------------------------------
+    #version {
+        font-size: 1.1em;
+        color: powderblue;
+        text-align: left;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    /* -------------------------------------
 place all the desktop styles above this line
 
 Responsive styles
