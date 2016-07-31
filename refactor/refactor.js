@@ -1,6 +1,6 @@
-var app = angular.module('myRefactor', ['ngMessages'])
+var app = angular.module('myRefactor', ['ngMessages', 'ngAnimate'])
 
-app.constant('VERSION', "1.3")
+app.constant('VERSION', "1.4")
 app.run(function (VERSION, $rootScope) {
     $rootScope.version = VERSION;
 })

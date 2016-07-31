@@ -121,6 +121,34 @@ Content styles (Main Module)
     .myLib {
         color: blue;
     }
+    /* Animation exercise below*/
+
+    .animate {
+        -webkit-animation: slide 2s;
+        transition: 1.5s background;
+    }
+
+    @-webkit-keyframes slide {
+        from {
+            margin-left: -100%;
+        }
+        to {
+            margin-left: 0;
+        }
+    }
+
+    .animate:hover {
+        background: tan;
+    }
+
+    #happyFace {
+        transition: transform 1s;
+    }
+
+    #happyFace:hover {
+        transform: rotate(1turn);
+    }
+    /* end animation work */
 
     .ng-inactive {
         display: none;

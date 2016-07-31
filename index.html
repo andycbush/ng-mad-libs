@@ -138,7 +138,7 @@
     </section>
 
 
-    <section id="finalMadLib" ng-show="inputHide && madInput.$valid">
+    <section class="animate" id="finalMadLib" ng-show="inputHide && madInput.$valid">
         <p><span class="myLib">{{data.name}}</span> was a <span class="myLib">{{data.jobTitle}}</span> who loved technology. Although <span class="myLib">{{gender.heShe}}</span> loved parts of <span class="myLib">{{gender.hisHer}}</span> job, <span class="myLib">{{gender.heShe}}</span> absolutely hated <span class="myLib">{{data.tediousTask}}</span> and <span class="myLib">{{data.dirtyTask}}</span>. So, <span class="myLib">{{data.name}}</span> met with <span class="myLib">{{gender.hisHer}}</span> life mentor <span class="myLib">{{data.celebrity}}</span> who told <span class="myLib">{{gender.himHer}}</span> to learn <span class="myLib">{{data.uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span class="myLib">{{data.uselessSkill}}</span> so <span class="myLib">{{gender.heShe}}</span> studied programming instead.</p>
         <p>What a great decision! With <span class="myLib">{{gender.hisHer}}</span> new skills, <span class="myLib">{{data.name}}</span> built a(n) <span class="myLib">{{data.adjective}}</span> robot named <span class="myLib">{{data.obnoxiousCelebrity}}</span> that not only loved <span class="myLib">{{data.dirtyTask}}</span> but did it <span class="myLib">{{data.hugeNumber | number}}</span> times faster. </p>
         <div>
@@ -157,9 +157,10 @@
     </footer>
 
     <!-- add all the scripts starting with the external ones and then your own javascript-->
-
     <script src="https://code.angularjs.org/1.5.5/angular.min.js" type="text/javascript"></script>
+
     <script src='https://code.angularjs.org/1.5.5/angular-messages.min.js' type="text/javascript"></script>
+    <script src='https://code.angularjs.org/1.5.5/angular-animate.min.js' type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js" type="text/javascript"></script>
     <script src="refactor/refactor.js" type="text/javascript"></script>
 </body>
